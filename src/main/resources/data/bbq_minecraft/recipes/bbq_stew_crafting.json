@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "bbq_minecraft:bbq_essence"
+    },
+    {
+      "item": "minecraft:cooked_beef"
+    },
+    {
+      "item": "bbq_minecraft:bbq_essence"
+    }
+  ],
+  "result": {
+    "item": "bbq_minecraft:bbqstew",
+    "count": 2
+  }
+}

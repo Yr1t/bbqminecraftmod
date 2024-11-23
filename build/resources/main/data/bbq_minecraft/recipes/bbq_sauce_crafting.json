@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bab",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "bbq_minecraft:bbq_essence"
+    },
+    "b": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "bbq_minecraft:bbq_sauce",
+    "count": 2
+  }
+}

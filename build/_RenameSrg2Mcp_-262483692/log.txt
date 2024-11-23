@@ -1,0 +1,15 @@
+Java Launcher: /opt/mcreator/jdk/bin/java
+Arguments: '--task, SRG_TO_MCP, --input, /home/yrit/.mcreator/gradle/caches/modules-2/files-2.1/top.theillusivec4.curios/curios-forge/5.4.2+1.20.1/38264e32bf1991da4a5a3d16d314bcf0c7a4667f/curios-forge-5.4.2+1.20.1.jar, --output, /home/yrit/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/top/theillusivec4/curios/curios-forge/5.4.2+1.20.1_mapped_official_1.20.1/curios-forge-5.4.2+1.20.1_mapped_official_1.20.1.jar, --mcp, /home/yrit/.mcreator/gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip, --strip-signatures'
+Classpath:
+ - /home/yrit/.mcreator/gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/installertools/1.3.2/installertools-1.3.2-fatjar.jar
+Working directory: /home/yrit/MCreatorWorkspaces/bbq_minecraft/build/_RenameSrg2Mcp_-262483692
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  /home/yrit/.mcreator/gradle/caches/modules-2/files-2.1/top.theillusivec4.curios/curios-forge/5.4.2+1.20.1/38264e32bf1991da4a5a3d16d314bcf0c7a4667f/curios-forge-5.4.2+1.20.1.jar
+Output: /home/yrit/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/top/theillusivec4/curios/curios-forge/5.4.2+1.20.1_mapped_official_1.20.1/curios-forge-5.4.2+1.20.1_mapped_official_1.20.1.jar
+MCP:    /home/yrit/.mcreator/gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

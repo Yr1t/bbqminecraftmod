@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blackstone"
+    },
+    "b": {
+      "item": "bbq_minecraft:bbq_essence"
+    },
+    "c": {
+      "item": "bbq_minecraft:bbqsmithingtemplate"
+    }
+  },
+  "result": {
+    "item": "bbq_minecraft:bbqsmithingtemplate",
+    "count": 2
+  }
+}

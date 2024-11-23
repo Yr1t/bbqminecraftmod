@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "bbq_minecraft:item/diamondbong"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,914 @@
+{
+  "mod_elements": [
+    {
+      "name": "Bbqstew",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbqstew",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bbq_minecraft/models/item/bbqstew.json",
+          "src/main/java/net/yrit/bbqminecraft/item/BbqstewItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BBQCreative",
+      "type": "tab",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_creative",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "StewGold",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stew_gold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/item/StewGoldItem.java",
+          "src/main/resources/assets/bbq_minecraft/models/item/stew_gold.json"
+        ]
+      }
+    },
+    {
+      "name": "StewGoldRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stew_gold_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/stew_gold_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BbqIngot",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bbq_minecraft/models/item/bbq_ingot.json",
+          "src/main/java/net/yrit/bbqminecraft/item/BbqIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BbqIngotCrafting",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_ingot_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/bbq_ingot_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "EOBEffectStartProcedure",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eob_effect_start_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/EOBEffectStartProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EssenceOfBbq",
+      "type": "potioneffect",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_of_bbq",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/potion/EssenceOfBbqMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "EOBEffectEndProcedure",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eob_effect_end_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/EOBEffectEndProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BBQSauceGiveEffect",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_sauce_give_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/BBQSauceGiveEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BBQSauce",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_sauce",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bbq_minecraft/models/item/bbq_sauce.json",
+          "src/main/java/net/yrit/bbqminecraft/item/BBQSauceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BBQEssence",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_essence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bbq_minecraft/models/item/bbq_essence.json",
+          "src/main/java/net/yrit/bbqminecraft/item/BBQEssenceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BBQOre",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/worldgen/configured_feature/bbq_ore.json",
+          "src/main/resources/assets/bbq_minecraft/models/block/bbq_ore.json",
+          "src/main/resources/assets/bbq_minecraft/blockstates/bbq_ore.json",
+          "src/main/java/net/yrit/bbqminecraft/block/BBQOreBlock.java",
+          "src/main/resources/data/bbq_minecraft/forge/biome_modifier/bbq_ore_biome_modifier.json",
+          "src/main/resources/data/bbq_minecraft/worldgen/placed_feature/bbq_ore.json",
+          "src/main/resources/assets/bbq_minecraft/models/item/bbq_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "BbqStewCrafting",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_stew_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/bbq_stew_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "BBQSauceCrafting",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_sauce_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/bbq_sauce_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "BBQ",
+      "type": "armor",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bbq_minecraft/models/item/bbq_boots.json",
+          "src/main/java/net/yrit/bbqminecraft/item/BBQItem.java",
+          "src/main/resources/assets/bbq_minecraft/models/item/bbq_helmet.json",
+          "src/main/resources/assets/bbq_minecraft/models/item/bbq_leggings.json",
+          "src/main/resources/assets/bbq_minecraft/models/item/bbq_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "Bbqsmithingtemplate",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbqsmithingtemplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bbq_minecraft/models/item/bbqsmithingtemplate.json",
+          "src/main/java/net/yrit/bbqminecraft/item/BbqsmithingtemplateItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NTBootsToBBQ",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nt_boots_to_bbq",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/nt_boots_to_bbq.json"
+        ]
+      }
+    },
+    {
+      "name": "NTLeggingsToBBQ",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nt_leggings_to_bbq",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/nt_leggings_to_bbq.json"
+        ]
+      }
+    },
+    {
+      "name": "NTChestplateToBBQ",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nt_chestplate_to_bbq",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/nt_chestplate_to_bbq.json"
+        ]
+      }
+    },
+    {
+      "name": "NTHelmetToBBQ",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nt_helmet_to_bbq",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/nt_helmet_to_bbq.json"
+        ]
+      }
+    },
+    {
+      "name": "BBQJuggernaut",
+      "type": "tool",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_juggernaut",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bbq_minecraft/models/item/bbq_juggernaut.json",
+          "src/main/java/net/yrit/bbqminecraft/item/BBQJuggernautItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BBQJuggernautSmithing",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_juggernaut_smithing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/bbq_juggernaut_smithing.json"
+        ]
+      }
+    },
+    {
+      "name": "BBQSmithingRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_smithing_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/bbq_smithing_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BBQJuggernautBallAttack",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_juggernaut_ball_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/BBQJuggernautBallAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DisableToolAbilityOnKeypress",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_tool_ability_on_keypress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/DisableToolAbilityOnKeypressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DisableToolAbilityBinding",
+      "type": "keybind",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_tool_ability_binding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/network/DisableToolAbilityBindingMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "BBQHelmetBonus",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_helmet_bonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/BBQHelmetBonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bbqoreloot",
+      "type": "loottable",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbqoreloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/loot_tables/blocks/bbq_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "EssenceofRage",
+      "type": "enchantment",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essenceof_rage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/enchantment/EssenceofRageEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "RageOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rage_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/RageOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RageOverlay",
+      "type": "overlay",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rage_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/client/screens/RageOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "SatanSlashing",
+      "type": "potioneffect",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "satan_slashing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/potion/SatanSlashingMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "SatanSlashingEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "satan_slashing_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/SatanSlashingEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SatanSlashingEffectExpires",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "satan_slashing_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/SatanSlashingEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BBQJuggernautSpecialInformation",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_juggernaut_special_information",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/BBQJuggernautSpecialInformationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BBQBlast",
+      "type": "projectile",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_blast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/entity/BBQBlastEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "BBQBlastProjectileHits",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_blast_projectile_hits",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/BBQBlastProjectileHitsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DiamondBong",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_bong",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/block/entity/DiamondBongBlockEntity.java",
+          "src/main/resources/assets/bbq_minecraft/blockstates/diamond_bong.json",
+          "src/main/resources/assets/bbq_minecraft/models/item/diamond_bong.json",
+          "src/main/resources/assets/bbq_minecraft/models/block/diamond_bong.json",
+          "src/main/java/net/yrit/bbqminecraft/block/DiamondBongBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "DiamondBongCrafting",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_bong_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/diamond_bong_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "BlockedWall",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocked_wall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/block/BlockedWallBlock.java",
+          "src/main/resources/assets/bbq_minecraft/blockstates/blocked_wall.json",
+          "src/main/resources/assets/bbq_minecraft/models/item/blocked_wall.json",
+          "src/main/resources/assets/bbq_minecraft/models/block/blocked_wall.json"
+        ]
+      }
+    },
+    {
+      "name": "BBQSmithingAltRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_smithing_alt_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/bbq_smithing_alt_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "OneHitObliterator",
+      "type": "tool",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_hit_obliterator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/item/OneHitObliteratorItem.java",
+          "src/main/resources/assets/bbq_minecraft/models/item/one_hit_obliterator.json"
+        ]
+      }
+    },
+    {
+      "name": "Almighty",
+      "type": "damagetype",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "almighty",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/damage_type/almighty.json"
+        ]
+      }
+    },
+    {
+      "name": "OneHitObliteratorLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_hit_obliterator_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/OneHitObliteratorLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BanHammer",
+      "type": "tool",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ban_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/item/BanHammerItem.java",
+          "src/main/resources/assets/bbq_minecraft/models/item/ban_hammer.json"
+        ]
+      }
+    },
+    {
+      "name": "BanHammerLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ban_hammer_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/BanHammerLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BBQContent",
+      "type": "dimension",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_content",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/dimension/bbq_content.json",
+          "src/main/java/net/yrit/bbqminecraft/world/dimension/BBQContentDimension.java",
+          "src/main/resources/data/bbq_minecraft/dimension_type/bbq_content.json"
+        ]
+      }
+    },
+    {
+      "name": "BbqTp",
+      "type": "command",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_tp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/command/BbqTpCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "BBQTpWhenRan",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bbq_tp_when_ran",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/BBQTpWhenRanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "RightClickAbilityEnabled",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "true"
+    },
+    {
+      "name": "RageActive",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "rageattk",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "ragespeed",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "rageattkspd",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "ragehealth",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "HighActive",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.bbq_minecraft.bbq_leggings": "BBQ Leggings",
+      "key.bbq_minecraft.disable_tool_ability_binding": "Disable Tool Right Click Ability",
+      "item_group.bbq_minecraft.bbq_creative": "BBQ Minecraft",
+      "material.category.silentgear.bbq": "BBQ",
+      "item.bbq_minecraft.bbqsmithingtemplate": "BBQ Smithing Template",
+      "effect.bbq_minecraft.essence_of_bbq": "Essence of BBQ",
+      "item.bbq_minecraft.stew_gold": "Stew Gold",
+      "item.bbq_minecraft.bbqstew": "BBQ Stew",
+      "block.bbq_minecraft.bbq_ore": "BBQ Ore",
+      "block.bbq_minecraft.blocked_wall": "Blocked Wall",
+      "gui.bbq_minecraft.rage_overlay.label_rage_active": "RAGE ACTIVE!",
+      "item.bbq_minecraft.bbq_boots": "BBQ Boots",
+      "item.bbq_minecraft.ban_hammer": "§4The Ban Hammer",
+      "item.bbq_minecraft.one_hit_obliterator": "§4One-Hit Obliterator",
+      "death.attack.almighty.item": "%1$s was annihilated by %2$s using %3$s",
+      "block.bbq_minecraft.diamond_bong": "Diamond Bong",
+      "item.bbq_minecraft.bbq_sauce": "BBQ Sauce",
+      "item.bbq_minecraft.bbq_juggernaut": "The BBQ Juggernaut",
+      "item.bbq_minecraft.bbq_helmet": "BBQ Helmet",
+      "effect.bbq_minecraft.satan_slashing": "Satan Slashing",
+      "item.bbq_minecraft.bbq_ingot": "BBQ Ingot",
+      "item.bbq_minecraft.bbq_chestplate": "BBQ Chestplate",
+      "key.categories.bbq": "BBQ Minecraft",
+      "death.attack.almighty.player": "%1$s got annihilated whilst trying to escape %2$s",
+      "item.bbq_minecraft.bbq_essence": "BBQ Essence",
+      "enchantment.bbq_minecraft.essenceof_rage": "Essence of Rage",
+      "death.attack.almighty": "%1$s died from an Almighty attack."
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "bbq_minecraft",
+    "modName": "BBQ Minecraft",
+    "version": "1.1.1",
+    "description": "A mod for BBQ Minecraft",
+    "author": "yrit",
+    "websiteURL": "https://theburrito.men",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "BBQ sauce is the best no one can tell me otherwise",
+    "modElementsPackage": "net.yrit.bbqminecraft",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

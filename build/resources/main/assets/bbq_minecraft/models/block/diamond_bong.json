@@ -1,0 +1,9 @@
+{
+  "parent": "bbq_minecraft:custom/bong2",
+  "textures": {
+    "all": "bbq_minecraft:block/bongtex",
+    "particle": "bbq_minecraft:block/bongtex",
+    "2": "bbq_minecraft:block/bongtex"
+  },
+  "render_type": "solid"
+}

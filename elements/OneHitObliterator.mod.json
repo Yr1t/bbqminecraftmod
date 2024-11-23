@@ -1,0 +1,39 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "onehitobliterator",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§4One-Hit Obliterator",
+    "specialInformation": {
+      "fixedValue": [
+        "§3This blade will strike down any foe in one hit, without fail.",
+        "Unobtainable in survival."
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:BBQCreative"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 3.0,
+    "enchantability": 100,
+    "damageVsEntity": 2.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "OneHitObliteratorLivingEntityIsHitWithTool"
+    }
+  }
+}

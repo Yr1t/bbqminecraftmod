@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bbq_minecraft:block/bbq_ore",
+    "up": "bbq_minecraft:block/bbq_ore",
+    "north": "bbq_minecraft:block/bbq_ore",
+    "east": "bbq_minecraft:block/bbq_ore",
+    "south": "bbq_minecraft:block/bbq_ore",
+    "west": "bbq_minecraft:block/bbq_ore",
+    "particle": "bbq_minecraft:block/bbq_ore"
+  },
+  "render_type": "solid"
+}

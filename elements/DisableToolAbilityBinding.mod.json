@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "G",
+    "keyBindingName": "Disable Tool Right Click Ability",
+    "keyBindingCategoryKey": "bbq",
+    "onKeyPressed": {
+      "name": "DisableToolAbilityOnKeypress"
+    }
+  }
+}

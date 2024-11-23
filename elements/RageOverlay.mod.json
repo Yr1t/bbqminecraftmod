@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rage_active",
+          "text": {
+            "fixedValue": "RAGE ACTIVE!"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_CENTER",
+          "x": 182,
+          "y": 8
+        }
+      }
+    ],
+    "baseTexture": "redfilter.png",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "RageOverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 16,
+      "sy": 16,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

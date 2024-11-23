@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    " a ",
+    "bab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "bbq_minecraft:diamond_bong",
+    "count": 1
+  }
+}

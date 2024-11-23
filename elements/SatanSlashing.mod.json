@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Satan Slashing",
+    "icon": "therageeffect.png",
+    "color": {
+      "value": -8192000,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "SatanSlashingEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "SatanSlashingEffectExpires"
+    }
+  }
+}

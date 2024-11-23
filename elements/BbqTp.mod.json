@@ -1,0 +1,10 @@
+{
+  "_fv": 57,
+  "_type": "command",
+  "definition": {
+    "commandName": "dimtp",
+    "type": "STANDARD",
+    "permissionLevel": "3",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"452\" y=\"106\"><next><block type=\"entity\"><field name=\"name\">Player</field><field name=\"type\">player</field><statement name=\"args\"><block type=\"string\"><field name=\"type\">string</field><field name=\"name\">dim</field><statement name=\"args\"><block type=\"number_default\"><field name=\"name\">X</field><statement name=\"args\"><block type=\"number_default\"><field name=\"name\">Y</field><statement name=\"args\"><block type=\"number_default\"><field name=\"name\">Z</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">BBQTpWhenRan</field></block></statement></block></statement></block></statement></block></statement></block></statement></block></next></block></xml>"
+  }
+}

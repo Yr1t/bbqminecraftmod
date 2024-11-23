@@ -1,0 +1,16 @@
+Java Launcher: /opt/mcreator/jdk/bin/java
+Arguments: '--task, SRG_TO_MCP, --input, /home/yrit/.mcreator/gradle/caches/modules-2/files-2.1/software.bernie.geckolib/geckolib-forge-1.20.1/4.4.2/eb458bc4379c117774e331e237d056b50f4b630d/geckolib-forge-1.20.1-4.4.2.jar, --output, /home/yrit/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/software/bernie/geckolib/geckolib-forge-1.20.1/4.4.2_mapped_official_1.20.1/geckolib-forge-1.20.1-4.4.2_mapped_official_1.20.1.jar, --mcp, /home/yrit/.mcreator/gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip, --strip-signatures'
+Classpath:
+ - /home/yrit/.mcreator/gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/installertools/1.3.2/installertools-1.3.2-fatjar.jar
+Working directory: /home/yrit/MCreatorWorkspaces/bbq_minecraft/build/_RenameSrg2Mcp_676032743
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  /home/yrit/.mcreator/gradle/caches/modules-2/files-2.1/software.bernie.geckolib/geckolib-forge-1.20.1/4.4.2/eb458bc4379c117774e331e237d056b50f4b630d/geckolib-forge-1.20.1-4.4.2.jar
+Output: /home/yrit/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/software/bernie/geckolib/geckolib-forge-1.20.1/4.4.2_mapped_official_1.20.1/geckolib-forge-1.20.1-4.4.2_mapped_official_1.20.1.jar
+MCP:    /home/yrit/.mcreator/gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Stripped Manifest of sha digests
+Process complete

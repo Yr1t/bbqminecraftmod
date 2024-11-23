@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bbq_minecraft:block/blocked_wall"
+    }
+  }
+}

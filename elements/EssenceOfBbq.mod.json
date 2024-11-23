@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Essence of BBQ",
+    "icon": "bbq_effect.png",
+    "color": {
+      "value": -12510711,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "EOBEffectStartProcedure"
+    },
+    "onExpired": {
+      "name": "EOBEffectEndProcedure"
+    }
+  }
+}

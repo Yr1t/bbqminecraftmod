@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bbq_minecraft:block/diamond_bong"
+    },
+    "facing=east": {
+      "model": "bbq_minecraft:block/diamond_bong",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bbq_minecraft:block/diamond_bong",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bbq_minecraft:block/diamond_bong",
+      "y": 270
+    }
+  }
+}

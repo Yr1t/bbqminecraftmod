@@ -1,0 +1,31 @@
+{
+  "coating/all": [
+    {
+      "texture": "silentgear:main_generic_hc",
+      "color": "#5A0000"
+    },
+    {
+      "texture": "silentgear:_highlight"
+    }
+  ],
+  "coating/part": [
+    {
+      "texture": "silentgear:coating_material",
+      "color": "#5A0000"
+    },
+    {
+      "texture": "silentgear:coating_jar"
+    }
+  ],
+  "coating/armor": [
+    {
+      "texture": "bbq_minecraft:bbq_ingot"
+    }
+  ],
+  "main/fragment": [
+    {
+      "texture": "silentgear:dust",
+      "color": "#5A0000"
+    }
+  ]
+}

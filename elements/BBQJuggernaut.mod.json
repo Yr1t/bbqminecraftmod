@@ -1,0 +1,47 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "bbq_juggernaut",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "The BBQ Juggernaut",
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "BBQJuggernautSpecialInformation"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:BBQCreative"
+    },
+    "harvestLevel": 1,
+    "efficiency": 13.0,
+    "attackSpeed": 1.6,
+    "enchantability": 20,
+    "damageVsEntity": 25.0,
+    "usageCount": 42069,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:BBQEssence"
+      },
+      {
+        "value": "CUSTOM:BbqIngot"
+      },
+      {
+        "value": "CUSTOM:BBQSauce"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "BBQJuggernautBallAttack"
+    }
+  }
+}

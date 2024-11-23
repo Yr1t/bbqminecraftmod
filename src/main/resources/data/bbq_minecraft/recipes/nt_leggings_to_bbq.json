@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "bbq_minecraft:bbqsmithingtemplate"
+  },
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "addition": {
+    "item": "bbq_minecraft:bbq_ingot"
+  },
+  "result": {
+    "item": "bbq_minecraft:bbq_leggings"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:BBQEssence"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": ""
+    },
+    "igniteFire": true,
+    "power": 6.0,
+    "damage": 10.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "BBQBlastProjectileHits"
+    },
+    "onHitsPlayer": {
+      "name": "BBQBlastProjectileHits"
+    },
+    "onHitsEntity": {
+      "name": "BBQBlastProjectileHits"
+    }
+  }
+}

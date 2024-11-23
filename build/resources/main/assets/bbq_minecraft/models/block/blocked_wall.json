@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bbq_minecraft:block/blockedwall",
+    "up": "bbq_minecraft:block/blockedwall",
+    "north": "bbq_minecraft:block/blockedwall",
+    "east": "bbq_minecraft:block/blockedwall",
+    "south": "bbq_minecraft:block/blockedwall",
+    "west": "bbq_minecraft:block/blockedwall",
+    "particle": "bbq_minecraft:block/blockedwall"
+  },
+  "render_type": "solid"
+}

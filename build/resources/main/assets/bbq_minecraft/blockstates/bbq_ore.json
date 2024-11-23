@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bbq_minecraft:block/bbq_ore"
+    }
+  }
+}

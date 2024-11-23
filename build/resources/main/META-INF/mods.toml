@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="bbq_minecraft"
+version="1.1.1"
+displayName="BBQ Minecraft"
+displayURL="https://theburrito.men"
+credits="BBQ sauce is the best no one can tell me otherwise"
+authors="yrit"
+description="A mod for BBQ Minecraft"
+
+[[dependencies.bbq_minecraft]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

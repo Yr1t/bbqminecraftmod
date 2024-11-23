@@ -1,0 +1,38 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "banhammer",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§4The Ban Hammer",
+    "specialInformation": {
+      "fixedValue": [
+        "§3An admin's best friend."
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:BBQCreative"
+    },
+    "harvestLevel": 10,
+    "efficiency": 100.0,
+    "attackSpeed": 3.0,
+    "enchantability": 100,
+    "damageVsEntity": 2.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "BanHammerLivingEntityIsHitWithTool"
+    }
+  }
+}
