@@ -16,7 +16,7 @@ import java.util.List;
 
 public class BbqstewItem extends Item {
 	public BbqstewItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(4f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(5f).build()));
 	}
 
 	@Override

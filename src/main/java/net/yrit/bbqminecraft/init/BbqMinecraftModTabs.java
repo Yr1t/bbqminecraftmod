@@ -34,6 +34,8 @@ public class BbqMinecraftModTabs {
 				tabData.accept(BbqMinecraftModBlocks.BLOCKED_WALL.get().asItem());
 				tabData.accept(BbqMinecraftModItems.ONE_HIT_OBLITERATOR.get());
 				tabData.accept(BbqMinecraftModItems.BAN_HAMMER.get());
+				tabData.accept(BbqMinecraftModItems.LORD_BBQ_SUMMON.get());
+				tabData.accept(BbqMinecraftModItems.YRITRELUCTANCE.get());
 			})
 
 					.build());

@@ -2,6 +2,7 @@
 package net.yrit.bbqminecraft.item;
 
 import net.yrit.bbqminecraft.procedures.BBQHelmetBonusProcedure;
+import net.yrit.bbqminecraft.init.BbqMinecraftModItems;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -29,12 +30,12 @@ public abstract class BBQItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 43;
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 60;
 			}
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{6, 8, 10, 6}[type.getSlot().getIndex()];
+				return new int[]{15, 15, 15, 15}[type.getSlot().getIndex()];
 			}
 
 			@Override
@@ -49,7 +50,7 @@ public abstract class BBQItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of();
+				return Ingredient.of(new ItemStack(BbqMinecraftModItems.BBQ_INGOT.get()));
 			}
 
 			@Override
@@ -59,7 +60,7 @@ public abstract class BBQItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0f;
+				return 5f;
 			}
 
 			@Override

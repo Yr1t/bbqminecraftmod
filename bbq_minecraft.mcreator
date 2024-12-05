@@ -186,12 +186,9 @@
       "registry_name": "bbq_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/bbq_minecraft/worldgen/configured_feature/bbq_ore.json",
           "src/main/resources/assets/bbq_minecraft/models/block/bbq_ore.json",
           "src/main/resources/assets/bbq_minecraft/blockstates/bbq_ore.json",
           "src/main/java/net/yrit/bbqminecraft/block/BBQOreBlock.java",
-          "src/main/resources/data/bbq_minecraft/forge/biome_modifier/bbq_ore_biome_modifier.json",
-          "src/main/resources/data/bbq_minecraft/worldgen/placed_feature/bbq_ore.json",
           "src/main/resources/assets/bbq_minecraft/models/item/bbq_ore.json"
         ]
       }
@@ -316,19 +313,6 @@
         "files": [
           "src/main/resources/assets/bbq_minecraft/models/item/bbq_juggernaut.json",
           "src/main/java/net/yrit/bbqminecraft/item/BBQJuggernautItem.java"
-        ]
-      }
-    },
-    {
-      "name": "BBQJuggernautSmithing",
-      "type": "recipe",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bbq_juggernaut_smithing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/bbq_minecraft/recipes/bbq_juggernaut_smithing.json"
         ]
       }
     },
@@ -712,6 +696,10 @@
             "type": "entity"
           },
           {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -809,6 +797,342 @@
           }
         ]
       }
+    },
+    {
+      "name": "Thebbqlord",
+      "type": "animatedentity",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "thebbqlord",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/entity/ThebbqlordEntity.java",
+          "src/main/java/net/yrit/bbqminecraft/entity/model/ThebbqlordModel.java",
+          "src/main/java/net/yrit/bbqminecraft/client/renderer/ThebbqlordRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "ThebbqlordEntityIsHurt",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thebbqlord_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/ThebbqlordEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bbqlordtrueform",
+      "type": "livingentity",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bbqlordtrueform",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/client/renderer/BbqlordtrueformRenderer.java",
+          "src/main/java/net/yrit/bbqminecraft/entity/BbqlordtrueformEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "BbqlordtrueformEntityIsHurt",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbqlordtrueform_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/BbqlordtrueformEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BbqlordtrueformOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbqlordtrueform_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/BbqlordtrueformOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bbqlordloot",
+      "type": "loottable",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbqlordloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/loot_tables/entities/bbqlordtrueform.json"
+        ]
+      }
+    },
+    {
+      "name": "LordBBQSummon",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lord_bbq_summon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/item/LordBBQSummonItem.java",
+          "src/main/resources/assets/bbq_minecraft/models/item/lord_bbq_summon.json"
+        ]
+      }
+    },
+    {
+      "name": "LordBBQSummonRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lord_bbq_summon_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/LordBBQSummonRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bbqlordsummoncraft",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbqlordsummoncraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bbq_minecraft/recipes/bbqlordsummoncraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Yritreluctance",
+      "type": "item",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yritreluctance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/item/YritreluctanceItem.java",
+          "src/main/resources/assets/bbq_minecraft/models/item/yritreluctance.json"
+        ]
+      }
+    },
+    {
+      "name": "ReluctanceCoordSaver",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reluctance_coord_saver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/ReluctanceCoordSaverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YritreluctancePlayerConsumes",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yritreluctance_player_consumes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/YritreluctancePlayerConsumesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ListDeathInfo",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "list_death_info",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/ListDeathInfoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bbqdeathinfo",
+      "type": "command",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbqdeathinfo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/command/BbqdeathinfoCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "BbqlordtrueformOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbqlordtrueform_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yrit/bbqminecraft/procedures/BbqlordtrueformOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -853,6 +1177,36 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "DeathX",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "DeathY",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "256.0"
+    },
+    {
+      "name": "DeathZ",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "DrankYritReluctance",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "DeathDimension",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -867,15 +1221,20 @@
       "item.bbq_minecraft.stew_gold": "Stew Gold",
       "item.bbq_minecraft.bbqstew": "BBQ Stew",
       "block.bbq_minecraft.bbq_ore": "BBQ Ore",
+      "item.bbq_minecraft.thebbqlord_spawn_egg": "The BBQ Lord Spawn Egg",
       "block.bbq_minecraft.blocked_wall": "Blocked Wall",
       "gui.bbq_minecraft.rage_overlay.label_rage_active": "RAGE ACTIVE!",
       "item.bbq_minecraft.bbq_boots": "BBQ Boots",
       "item.bbq_minecraft.ban_hammer": "§4The Ban Hammer",
+      "entity.bbq_minecraft.bbqlordtrueform": "The BBQ Lord\u0027s True Form",
       "item.bbq_minecraft.one_hit_obliterator": "§4One-Hit Obliterator",
       "death.attack.almighty.item": "%1$s was annihilated by %2$s using %3$s",
+      "item.bbq_minecraft.yritreluctance": "Yrit\u0027s Reluctance",
       "block.bbq_minecraft.diamond_bong": "Diamond Bong",
       "item.bbq_minecraft.bbq_sauce": "BBQ Sauce",
       "item.bbq_minecraft.bbq_juggernaut": "The BBQ Juggernaut",
+      "entity.bbq_minecraft.thebbqlord": "The BBQ Lord",
+      "item.bbq_minecraft.lord_bbq_summon": "The BBQ Lord\u0027s Totem of Summoning",
       "item.bbq_minecraft.bbq_helmet": "BBQ Helmet",
       "effect.bbq_minecraft.satan_slashing": "Satan Slashing",
       "item.bbq_minecraft.bbq_ingot": "BBQ Ingot",
@@ -894,7 +1253,7 @@
   "workspaceSettings": {
     "modid": "bbq_minecraft",
     "modName": "BBQ Minecraft",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "description": "A mod for BBQ Minecraft",
     "author": "yrit",
     "websiteURL": "https://theburrito.men",
@@ -904,7 +1263,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "use_compiled_mods",
+      "geckolib",
+      "jei"
+    ],
     "currentGenerator": "forge-1.20.1",
     "credits": "BBQ sauce is the best no one can tell me otherwise",
     "modElementsPackage": "net.yrit.bbqminecraft",

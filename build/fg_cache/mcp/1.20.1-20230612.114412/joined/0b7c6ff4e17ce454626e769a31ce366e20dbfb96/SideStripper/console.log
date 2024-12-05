@@ -1,0 +1,9 @@
+JVM:         /home/yrit/Documents/MCreator20234/jdk/bin/java
+JVM Args:    
+Run Args:    "--strip", "--input", "/home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/AccessTransformer/output.jar", "--output", "/home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/SideStripper/output.jar", "--data", "/home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/SideStripper/string_data.sas"
+Classpath:   /home/yrit/.mcreator/gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/mergetool/1.1.7/mergetool-1.1.7-fatjar.jar
+Working Dir: /home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/SideStripper
+Main Class:  net.minecraftforge.mergetool.ConsoleMerger
+Input:  /home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/AccessTransformer/output.jar
+Output: /home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/SideStripper/output.jar
+Data:   /home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/SideStripper/string_data.sas

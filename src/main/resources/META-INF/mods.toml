@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="bbq_minecraft"
-version="1.1.1"
+version="1.2.0"
 displayName="BBQ Minecraft"
 displayURL="https://theburrito.men"
 credits="BBQ sauce is the best no one can tell me otherwise"
@@ -20,4 +20,22 @@ description="A mod for BBQ Minecraft"
 
 
 
+[[dependencies.bbq_minecraft]]
+    modId="use_compiled_mods"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.bbq_minecraft]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.bbq_minecraft]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

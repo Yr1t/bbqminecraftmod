@@ -66,6 +66,10 @@ public class BbqMinecraftModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			clone.DeathX = original.DeathX;
+			clone.DeathY = original.DeathY;
+			clone.DeathZ = original.DeathZ;
+			clone.DeathDimension = original.DeathDimension;
 			if (!event.isWasDeath()) {
 				clone.RightClickAbilityEnabled = original.RightClickAbilityEnabled;
 				clone.RageActive = original.RageActive;
@@ -74,6 +78,7 @@ public class BbqMinecraftModVariables {
 				clone.rageattkspd = original.rageattkspd;
 				clone.ragehealth = original.ragehealth;
 				clone.HighActive = original.HighActive;
+				clone.DrankYritReluctance = original.DrankYritReluctance;
 			}
 		}
 	}
@@ -116,6 +121,11 @@ public class BbqMinecraftModVariables {
 		public double rageattkspd = 0;
 		public double ragehealth = 0;
 		public boolean HighActive = false;
+		public double DeathX = 0;
+		public double DeathY = 256.0;
+		public double DeathZ = 0;
+		public boolean DrankYritReluctance = false;
+		public String DeathDimension = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -131,6 +141,11 @@ public class BbqMinecraftModVariables {
 			nbt.putDouble("rageattkspd", rageattkspd);
 			nbt.putDouble("ragehealth", ragehealth);
 			nbt.putBoolean("HighActive", HighActive);
+			nbt.putDouble("DeathX", DeathX);
+			nbt.putDouble("DeathY", DeathY);
+			nbt.putDouble("DeathZ", DeathZ);
+			nbt.putBoolean("DrankYritReluctance", DrankYritReluctance);
+			nbt.putString("DeathDimension", DeathDimension);
 			return nbt;
 		}
 
@@ -143,6 +158,11 @@ public class BbqMinecraftModVariables {
 			rageattkspd = nbt.getDouble("rageattkspd");
 			ragehealth = nbt.getDouble("ragehealth");
 			HighActive = nbt.getBoolean("HighActive");
+			DeathX = nbt.getDouble("DeathX");
+			DeathY = nbt.getDouble("DeathY");
+			DeathZ = nbt.getDouble("DeathZ");
+			DrankYritReluctance = nbt.getBoolean("DrankYritReluctance");
+			DeathDimension = nbt.getString("DeathDimension");
 		}
 	}
 
@@ -174,6 +194,11 @@ public class BbqMinecraftModVariables {
 					variables.rageattkspd = message.data.rageattkspd;
 					variables.ragehealth = message.data.ragehealth;
 					variables.HighActive = message.data.HighActive;
+					variables.DeathX = message.data.DeathX;
+					variables.DeathY = message.data.DeathY;
+					variables.DeathZ = message.data.DeathZ;
+					variables.DrankYritReluctance = message.data.DrankYritReluctance;
+					variables.DeathDimension = message.data.DeathDimension;
 				}
 			});
 			context.setPacketHandled(true);

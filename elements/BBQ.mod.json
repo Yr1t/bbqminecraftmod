@@ -81,17 +81,21 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 43,
-    "damageValueHelmet": 6,
-    "damageValueBody": 10,
-    "damageValueLeggings": 8,
-    "damageValueBoots": 6,
+    "maxDamage": 60,
+    "damageValueHelmet": 15,
+    "damageValueBody": 15,
+    "damageValueLeggings": 15,
+    "damageValueBoots": 15,
     "enchantability": 20,
-    "toughness": 0.0,
+    "toughness": 5.0,
     "knockbackResistance": 0.30000000000000004,
     "equipSound": {
       "value": "item.armor.equip_generic"
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "CUSTOM:BbqIngot"
+      }
+    ]
   }
 }

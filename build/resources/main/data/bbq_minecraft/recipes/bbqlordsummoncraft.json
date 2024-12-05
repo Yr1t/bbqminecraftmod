@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "b": {
+      "item": "minecraft:netherite_block"
+    },
+    "c": {
+      "item": "minecraft:pig_spawn_egg"
+    }
+  },
+  "result": {
+    "item": "bbq_minecraft:lord_bbq_summon",
+    "count": 1
+  }
+}

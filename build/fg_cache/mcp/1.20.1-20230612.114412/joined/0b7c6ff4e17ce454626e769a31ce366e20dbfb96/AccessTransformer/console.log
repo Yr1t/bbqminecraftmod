@@ -1,0 +1,6 @@
+JVM:         /home/yrit/Documents/MCreator20234/jdk/bin/java
+JVM Args:    
+Run Args:    "--inJar", "/home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/rename/output.jar", "--outJar", "/home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/AccessTransformer/output.jar", "--atFile", "/home/yrit/MCreatorWorkspaces/bbq_minecraft/src/main/resources/META-INF/accesstransformer.cfg", "--atFile", "/tmp/FG_ats_8232927265774208041.cfg"
+Classpath:   /home/yrit/.mcreator/gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/8.2.0/accesstransformers-8.2.0-fatjar.jar
+Working Dir: /home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/AccessTransformer
+Main Class:  net.minecraftforge.accesstransformer.TransformerProcessor

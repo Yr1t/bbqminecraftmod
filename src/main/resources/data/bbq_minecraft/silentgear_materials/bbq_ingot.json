@@ -30,7 +30,7 @@
         }
       ],
       "armor": {
-        "mul2": 0.4
+        "mul2": 0.6
       },
       "armor_durability": {
         "mul2": 0.8
@@ -39,22 +39,22 @@
         "mul2": 1.0
       },
       "melee_damage": {
-        "mul2": 1.0
+        "mul2": 1.5
       },
       "magic_damage": {
         "mul2": 0.9
       },
       "ranged_damage": {
-        "add": 3.5
+        "mul2": 1.0
       },
       "armor_toughness": {
-        "add": 10.0
+        "add": 15.0
       },
       "knockback_resistance": {
         "add": 8.0
       },
       "enchantment_value": {
-        "add": 10.0
+        "add": 20.0
       }
     }
   },

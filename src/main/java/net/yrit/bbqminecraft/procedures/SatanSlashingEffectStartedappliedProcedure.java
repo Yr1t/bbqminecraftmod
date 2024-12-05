@@ -39,9 +39,9 @@ public class SatanSlashingEffectStartedappliedProcedure {
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
 						.addTransientModifier((new AttributeModifier(UUID.fromString("328bab5a-e57f-11ee-b95d-325096b39f47"), "SatanSpeed", 0.2, AttributeModifier.Operation.ADDITION)));
 			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-					.hasModifier((new AttributeModifier(UUID.fromString("328baa2e-e57f-11ee-bc66-325096b39f47"), "SatanAttk", 2, AttributeModifier.Operation.MULTIPLY_TOTAL)))))
+					.hasModifier((new AttributeModifier(UUID.fromString("328baa2e-e57f-11ee-bc66-325096b39f47"), "SatanAttk", 1.5, AttributeModifier.Operation.MULTIPLY_TOTAL)))))
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-						.addTransientModifier((new AttributeModifier(UUID.fromString("328baa2e-e57f-11ee-bc66-325096b39f47"), "SatanAttk", 2, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+						.addTransientModifier((new AttributeModifier(UUID.fromString("328baa2e-e57f-11ee-bc66-325096b39f47"), "SatanAttk", 1.5, AttributeModifier.Operation.MULTIPLY_TOTAL)));
 			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_SPEED)
 					.hasModifier((new AttributeModifier(UUID.fromString("328ba97a-e57f-11ee-9083-325096b39f47"), "SatanAttkSpd", 0.7, AttributeModifier.Operation.ADDITION)))))
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_SPEED)

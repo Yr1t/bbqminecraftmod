@@ -4,8 +4,10 @@
  */
 package net.yrit.bbqminecraft.init;
 
+import net.yrit.bbqminecraft.item.YritreluctanceItem;
 import net.yrit.bbqminecraft.item.StewGoldItem;
 import net.yrit.bbqminecraft.item.OneHitObliteratorItem;
+import net.yrit.bbqminecraft.item.LordBBQSummonItem;
 import net.yrit.bbqminecraft.item.BbqstewItem;
 import net.yrit.bbqminecraft.item.BbqsmithingtemplateItem;
 import net.yrit.bbqminecraft.item.BbqIngotItem;
@@ -42,6 +44,8 @@ public class BbqMinecraftModItems {
 	public static final RegistryObject<Item> BLOCKED_WALL = block(BbqMinecraftModBlocks.BLOCKED_WALL);
 	public static final RegistryObject<Item> ONE_HIT_OBLITERATOR = REGISTRY.register("one_hit_obliterator", () -> new OneHitObliteratorItem());
 	public static final RegistryObject<Item> BAN_HAMMER = REGISTRY.register("ban_hammer", () -> new BanHammerItem());
+	public static final RegistryObject<Item> LORD_BBQ_SUMMON = REGISTRY.register("lord_bbq_summon", () -> new LordBBQSummonItem());
+	public static final RegistryObject<Item> YRITRELUCTANCE = REGISTRY.register("yritreluctance", () -> new YritreluctanceItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

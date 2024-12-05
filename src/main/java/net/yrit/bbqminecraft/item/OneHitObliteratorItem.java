@@ -43,7 +43,7 @@ public class OneHitObliteratorItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-		OneHitObliteratorLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity);
+		OneHitObliteratorLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity, sourceentity);
 		return true;
 	}
 

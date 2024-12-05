@@ -36,8 +36,7 @@
     "name": "BBQ Ore",
     "specialInformation": {
       "fixedValue": [
-        "Spawns in Basalt Deltas and Nether Wastes, next to blackstone.",
-        "§7y-Level <14"
+        "Currently unused."
       ]
     },
     "hardness": 4.5,
@@ -122,27 +121,17 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "generateFeature": true,
-    "restrictionBiomes": [
-      {
-        "value": "basalt_deltas"
-      },
-      {
-        "value": "nether"
-      }
-    ],
+    "generateFeature": false,
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "TAG:stone_ore_replaceables"
-      },
-      {
-        "value": "Blocks.BLACKSTONE"
+        "value": "Blocks.STONE#0"
       }
     ],
-    "generationShape": "UNIFORM",
-    "frequencyPerChunks": 5,
+    "generationShape": "TRIANGLE",
+    "frequencyPerChunks": 6,
     "frequencyOnChunk": 2,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 15
+    "maxGenerateHeight": 32
   }
 }

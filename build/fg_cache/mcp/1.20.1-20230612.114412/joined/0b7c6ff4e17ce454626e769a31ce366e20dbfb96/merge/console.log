@@ -1,0 +1,6 @@
+JVM:         /home/yrit/Documents/MCreator20234/jdk/bin/java
+JVM Args:    
+Run Args:    "--client", "/home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/stripClient/output.jar", "--server", "/home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/stripServer/output.jar", "--ann", "1.20.1", "--output", "/home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/merge/output.jar", "--inject", "false"
+Classpath:   /home/yrit/.mcreator/gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/mergetool/1.1.7/mergetool-1.1.7-fatjar.jar
+Working Dir: /home/yrit/MCreatorWorkspaces/bbq_minecraft/build/fg_cache/mcp/1.20.1-20230612.114412/joined/0b7c6ff4e17ce454626e769a31ce366e20dbfb96/merge
+Main Class:  net.minecraftforge.mergetool.ConsoleMerger
